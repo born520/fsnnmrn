@@ -17,10 +17,14 @@ xmlns="http://www.w3.org/TR/REC-html40">
         table {
             border-collapse: collapse;
             width: 100%;
+            max-width: 100%;  /* 테이블이 화면 너비를 넘지 않도록 설정 */
+            table-layout: auto;  /* 테이블 레이아웃 자동 설정 */
         }
         td, th {
             border: 1px solid #ddd;
             padding: 8px;
+            word-wrap: break-word;  /* 내용이 긴 경우 자동 줄바꿈 */
+            text-align: center;  /* 텍스트 가운데 정렬 */
         }
         tr:nth-child(even) {
             background-color: #f2f2f2;
@@ -28,9 +32,11 @@ xmlns="http://www.w3.org/TR/REC-html40">
         th {
             padding-top: 12px;
             padding-bottom: 12px;
-            text-align: left;
             background-color: #4CAF50;
             color: white;
+        }
+        h1 {
+            text-align: center;  /* 제목 가운데 정렬 */
         }
     </style>
 </head>
